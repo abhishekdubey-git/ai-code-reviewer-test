@@ -18,6 +18,6 @@ jobs:
         with:
           url: 'https://api.openai.com/v1/chat/completions'
           method: 'POST'
-          bearerToken: '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'
+          bearerToken: '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'
           customHeaders: '{"Content-Type": "application/json"}'
           data: '{"model":"gpt-3.5-turbo","temperature":0.2,"max_tokens":700,"top_p":1,"frequency_penalty":0,"presence_penalty":0,"messages":[{"role":"system","content":"Your task is to review pull requests. Instructions: Provide the response in following JSON format: \\\"lineNumber\\\":  <line_number>, \\\"reviewComment\\\": <review comment>. Do not give positive comments or compliments. Provide comments and suggestions ONLY if there is something to improve, otherwise return an empty array. Write the comment in GitHub Markdown format. Use the given description only for the overall context and only comment the code. IMPORTANT: NEVER suggest adding comments to the code. Here is the code snippet - @RestController public class UserController { @GetMapping(\\\"/users\\\") public List getUsers() {return List.of(\\\"user1\\\", \\\"user2\\\", \\\"user3\\\", \\\"user4\\\");}}}"}]}'
